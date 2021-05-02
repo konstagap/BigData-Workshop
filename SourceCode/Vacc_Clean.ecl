@@ -1,7 +1,7 @@
 #WORKUNIT('NAME','Clean_Vaccine');
 
 
-IMPORT $.Layout.Vaccine_Recs;
+IMPORT Layout.Vaccine_Recs;
 IMPORT STD;
 
 /* 
