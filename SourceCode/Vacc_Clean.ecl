@@ -42,11 +42,11 @@ OUTPUT(cleanDS(location = 'NEW YORK'),, NAMED('data_cleaned_NY'));//Output sampl
    ECL has the perfect pattern for this and it is called as ITERATE */
 
 
-fixNoDataDS := ITERATE(SORT(cleanDS, location, date), //Make sure it is sorted so that we have the correct adjecent record
+fixNoDataDS := ITERATE(SORT(cleanDS, location, date), //Make sure it is sorted so that we have the correct adjacent record
                   TRANSFORM(Vaccine_Recs.VacRec_Clean, 
 
-                           //TODO: the conditions for total_vaccinations are quaality on location and total_vaccinations being 0
-                           // SELF.total_vaccinations := IF (// Provide the if condition, LEFT.total_vaccinations, RIGHT.total_vaccinations),
+                           //TODO: If the current record and the next record have the same location and the value of the current record field is zero, replace the field value with the next records value
+                           //SELF.total_vaccinations := IF (// Provide the if condition, LEFT.total_vaccinations, RIGHT.total_vaccinations),
 
                             SELF.total_distributed := IF (RIGHT.location = LEFT.location and RIGHT.total_distributed = 0, LEFT.total_distributed, RIGHT.total_distributed),
                             SELF.people_fully_vaccinated := IF (RIGHT.location=LEFT.location and RIGHT.people_fully_vaccinated  = 0, LEFT.people_fully_vaccinated , RIGHT.people_fully_vaccinated ),
