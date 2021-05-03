@@ -1,3 +1,7 @@
+
+#WORKUNIT('NAME','Cars_Project');
+
+
 IMPORT $.getCars;
 
 //For this practice we will be using getCars module.
@@ -40,6 +44,7 @@ carsRec := RECORD
   STRING  colorType;
 END;
 
+//TODO: complete the SLEF parts
 /*
 carsRec xForm (getCars.cars_layout Le) := TRANSFORM
   SELF.name := Le.brand + ' ' + Le.model;

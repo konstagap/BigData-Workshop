@@ -1,4 +1,6 @@
 
+#WORKUNIT('NAME','Set_Math_Sol');
+
 //Defining record layout
 Layout_Person := RECORD
   UNSIGNED  personID;

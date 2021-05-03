@@ -1,9 +1,10 @@
 
-#WORKUNIT('NAME','Clean_Population');
+#WORKUNIT('NAME','Clean_Population_Sol');
 
 IMPORT STD;
-IMPORT ^.Layout.Vaccine_Recs; //^: Root acccess
-IMPORT ^.Layout.Population_Recs;
+IMPORT Layout.Vaccine_Recs; //^: Root acccess
+IMPORT Layout.Population_Recs;
+
 
 //Filter so that we only have state population
 statesOnlyDS := Population_Recs.PopDS_Raw (state <> '0');
@@ -22,7 +23,11 @@ statesDS := ROLLUP(statesGroupedDS, GROUP,
 //NOTE: You could also accomplish this with a TABLE pattern but ROLLOUP is more approproate if you are applying 
 //complex transformations
 
-
+/*
 OUTPUT(statesDS,,Population_Recs.PopPath_Clean,
    thor,compressed,overwrite,expire(10),named('state_population'));
+
+*/
+
+OUTPUT(statesDS, NAMED('state_population'));
 

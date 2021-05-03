@@ -1,4 +1,6 @@
 
+#WORKUNIT('NAME','Types_Output_Sol');
+
 //Define firstName that only takes 5 characters 
 //TODO: Assign yourName to firstName
 STRING5 firstName := '';
