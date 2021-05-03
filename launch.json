@@ -21,7 +21,7 @@
         "includeFolders": "${config:ecl.includeFolders}",
         "legacyMode": "${config:ecl.legacyMode}",
         "resultLimit": 100,
-        "user": "VS_Bahar",
+        "user": "FirstName_LastNameInitial",
         "password": ""
       }
     ]
