@@ -28,10 +28,6 @@ concatMe := (STRING) num1 + (STRING) num2;
 //display concatMe result
 OUTPUT(concatMe, NAMED('concateMe'));
        
-//subtract num1 from num2, and cast to STRING. 
-//display result
-num3 := (STRING) (num1 - num2); 
-OUTPUT(num3, NAMED('num3'));
 
 //What's the result of following with sum being the first operation to execute:
 // 100 + 200 * 2

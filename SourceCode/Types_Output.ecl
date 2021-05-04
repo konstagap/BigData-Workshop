@@ -23,14 +23,11 @@ num1 := 234;
 num2 := 345;
 
 //TODO: Type cast Num1 and num2 to STRING and then concatenate them. Save result to concatMe
-//concatMe :=
+//concatMe := (STRING) num1 + 
 
 //Display concatMe result
 //OUTPUT(concatMe, NAMED('concateMe'));
        
-//TODO: Subtract num1 from num2, and cast to STRING. 
-//num3 :=
-//OUTPUT(num3, NAMED('num3'));
 
 //TODO: What's the result of following with sum being the first operation to execute:
 // 100 + 200 * 2

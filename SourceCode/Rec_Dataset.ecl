@@ -19,9 +19,9 @@ cars_layout := RECORD
 
 //Create dataset: file is a CSV format
 
-carsDS := DATASET('~usa::cars::csv', //TODO: You file name
-                              cars_layout,       // Record definition
-                               CSV(HEADING(1))); //TODO : Define file type with indicator that row one is the header
+carsDS := DATASET('~usa::cars::csv', //File name
+                              cars_layout,       //Record definition
+                               CSV(HEADING(1))); //Define file type with indicator that row one is the header
 
 //***********************************
 /*********   PART ONE    ************/
