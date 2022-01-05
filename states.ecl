@@ -1,4 +1,4 @@
-IMPORT $.files as files;
+IMPORT ecl_repo_1.files as files;
 import std;
 
 //Filter so that we only have state population
