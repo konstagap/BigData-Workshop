@@ -1,7 +1,6 @@
 # ECL-Workshop
 
 LexisNexis Learn Academy welcomes you to ECL Workshop.
-asdvasdf
 ## Navigating asdfRepository124
 
 ### Files
